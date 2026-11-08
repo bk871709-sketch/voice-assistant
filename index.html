@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>basant871</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f2027;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    #mic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: none;
+      background: #6a3093;
+      color: white;
+      font-size: 40px;
+      cursor: pointer;
+    }
+    #mic.listening {
+      background: #e94560;
+    }
+    #status {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    #heard, #reply {
+      margin-top: 15px;
+      max-width: 90%;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>basant871</h1>
+  <button id="mic">🎤</button>
+  <p id="status">Tap the mic and speak</p>
+  <p id="heard"></p>
+  <p id="reply"></p>
+  <script src="script.js"></script>
+</body>
+</html>
